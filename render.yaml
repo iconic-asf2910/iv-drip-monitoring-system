@@ -1,11 +1,9 @@
 services:
-  - type: web
-    name: smart-iv-backend
-    env: go
-    region: oregon
-    plan: free
-    buildCommand: cd backend && go build -v -o server main.go
-    startCommand: backend/server
-    envVars:
-      - key: PORT
-        value: 8080
+
+* type: web
+  name: smart-iv-backend
+  env: go
+  region: oregon
+  plan: free
+  buildCommand: cd backend && go build -v -o server main.go
+  startCommand: ./backend/server
