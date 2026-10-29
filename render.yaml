@@ -7,3 +7,7 @@ services:
   plan: free
   buildCommand: cd backend && go build -v -o server main.go
   startCommand: ./backend/server
+
+
+
+
